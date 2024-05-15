@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.social-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-links ul {
+    display: flex;
+}
+
+.social-links ul li {
+    margin: 10px 10px;
+    list-style: none;
+}
+
+.social-links ul li img {
+    max-width: 35px;
+    filter: invert(50%);
+}
+
+.social-links form button {
+    padding: 6px;
+    border-radius: 5px;
+    background-color: #556b2f;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+.big-menu {
+    background-color: #000;
+    color: #fff;
+    padding: 32px;
+}
+
+.sub-menu {
+    display: none;
+    position: absolute;
+    width: 300px;
+    top: 110%;
+    list-style-type: none;
+    background-color: #0f0f0f;
+}
+
+.menu > li {
+    position: relative;
+    float: left;
+    padding: 16px;
+    list-style: none;
+    cursor: pointer;
+    border-bottom: 4px solid transparent;
+}
+
+.clear {
+    clear: both;
+}
+
+.menu li:hover .sub-menu {
+    display: block;
+}
+
+.menu li:hover {
+    border-color: #fff;
+}
+
+.sub-menu a {
+    color: #fff;
+}
+
+.conteudo {
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+h2 {
+    font-size: 2em;
+    margin: 16px;
+}
+
+h3 {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.conteudo img{
+    max-width: 100%;
+}
+
+.destaque .about a {
+    display: flex;
+    font-size: 1.5em;
+}
+
+.destaque .about img {
+    width: 60%;
+    margin-right: 8px;
+}
+
+aside {
+    padding-left: 40px;
+}
+
+.add-services {
+    display: grid;
+    grid-template-columns: repeat(3, 32.6%);
+    column-gap: 1%;
+    row-gap: 5%;
+}
+
+.add-services button {
+    padding: 10px;
+    width: 100%;
+    background-color: #556b2f;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 4px;
+    margin-top: 5px;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+
+.add-services img {
+    max-width: 100%;
+    height: 150px;
+}
+
+footer {
+    padding-top: 10px;
+    background-color: #556b2f;
+    color: #fff;
+    font-weight: bold;
+    width: 100%;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 640px) {
+    .conteudo {
+        display: block;
+        max-width: 90%;
+    }
+
+    .destaque .about a {
+        display: block;
+    }
+
+    .destaque .about a img {
+        width: 100%;
+    }
+
+    .destaque .about a  h3{
+        display: block;
+        font-size: 0.7em;
+    }
+
+    .add-services {
+        display: block;
+    }
+
+    .add-services img {
+        width: 100%;
+        height: 200px;
+        margin-top: 10px;
+    }
+
+    .add-services h3 {
+        font-size: 1em;
+    }
+
+    .social-links ul li {
+        margin: 1px 1px;
+        list-style: none;
+    }
+    
+    .social-links ul li img {
+        max-width: 35px;
+        filter: invert(50%);
+    }
+
+    aside {
+        padding: 0;
+        font-size: 1em;
+    }
+
+    .sub-menu {
+        display: none;
+        position: absolute;
+        width: 300px;
+        top: 110%;
+        left: -20%;
+        list-style-type: none;
+        background-color: #0f0f0f;
+    }
+    }
+
+    @media screen and (min-width: 641px) and (max-width: 1023px) {
+        .conteudo {
+            max-width: 98%;
+        }
+
+        .destaque .about a {
+            display: block;
+            width: 100%;
+        }
+
+        .destaque .about a img {
+            width: 100%;
+        }
+
+        .add-services {
+            display: grid;
+            grid-template-columns: repeat(2, 48%);
+        }
+    }
+
